@@ -1,0 +1,103 @@
+:root {
+    /* Color scheme from your site plan */
+    --primary-color: #8b8c89;    /* Gray for headers/nav */
+    --secondary-color: #e7ecef;   /* Light gray for backgrounds */
+    --accent1-color: #ba181b;     /* Red for accents */
+    --accent2-color: #004e98;     /* Blue for additional accents */
+
+    /* Fonts from your site plan */
+    --heading-font: 'Lato', sans-serif;
+    --text-font: 'Roboto', sans-serif;
+}
+
+body {
+    max-width: 1200px; /* Limits page width for better design control */
+    margin: 0 auto;    /* Centers the content */
+    font-family: var(--text-font); /* Roboto for body text */
+}
+
+/* Headings */
+h1, h2 {
+    font-family: var(--heading-font); /* Lato for headings */
+    color: var(--primary-color); /* Gray */
+}
+
+h1 {
+    font-size: 3.5em;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--accent1-color); /* Blue for contrast on hero image */
+    text-align: center;
+    border: 2px solid black;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+/* Paragraphs */
+p {
+    color: var(--primary-color); /* Gray */
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Hero Container */
+.hero {
+    position: relative;
+    height: 450px;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; /* Makes image fill width of container */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Keeps image behind content */
+}
+
+/* Article */
+article {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--secondary-color); /* Secondary color with opacity */
+    padding: 20px;
+    max-width: 600px;
+}
+
+article img {
+    float: right;
+    max-width: 150px;
+    margin-left: 20px;
+}
+
+/* Social Media Links in Footer */
+footer a {
+    text-decoration: none; 
+}
+
+/* Ensure footer images are sized appropriately */
+footer img {
+    width: 30px;
+    height: auto;
+    margin: 0 10px;
+}
+
+section img {
+    width: 300px;              /* Uniform width */
+    height: 350px;             /* Uniform height */
+    object-fit: cover;         /* Ensures images fill space nicely */
+    display: block;     /* Keeps images inline */
+    margin: 10px;              /* Spacing between images */
+    border: 2px solid var(--accent2-color); /* Blue border for polish */
+    border-radius: 5px;        /* Rounded corners for a nicer look */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
