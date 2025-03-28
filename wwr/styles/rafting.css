@@ -1,10 +1,10 @@
 
 :root {
     
-    --primary-color: #454544;    
-    --secondary-color: #88bd8f;   
-    --accent1-color: #ba181b;    
-    --accent2-color: #004e98;     
+    --primary-color: white;    
+    --secondary-color: #303b31;   
+    --accent1-color: #1a6184;    
+    --accent2-color: #d27979;
 
     /* Fonts from your site plan */
     --heading-font: 'Lato', sans-serif;
@@ -84,13 +84,14 @@ h1 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    color: white;
+    color: var(--primary-color);
     text-align: center;
     border: 2px solid black;
 }
 
 h2 {
     font-size: 1.8em;
+    text-align: center
 }
 
 
@@ -153,6 +154,7 @@ article img {
 
 .history-content p {
     flex: 1;
+    color: var(--secondary-color);
     max-width: 300px;
 }
 
