@@ -237,7 +237,7 @@ article img {
 }
   
 .footer-flex a {
-    color: var(--accent1-color);
+    color: var(--primary-color);
     text-decoration: none;
 }
   
@@ -297,11 +297,13 @@ article img {
 .company-info h2 {
     font-size: 1.5em;
     margin: 10px 0;
+    color: var(--primary-color);
 }
   
 .company-info p {
     margin: 5px 0;
     font-size: 1em;
+    color: var(--primary-color);
 }
   
   /* Contact Form */
@@ -422,6 +424,13 @@ article img {
     max-width: 1200px;
     padding: 0 20px;
     text-align: center;
+}
+
+.employee-profiles h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+    font-family: 'Roboto', sans-serif;
 }
   
 .profile-gallery {
