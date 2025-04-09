@@ -456,3 +456,153 @@ article img {
     font-size: 1em;
     margin-top: 5px;
 }
+
+/* ------------------- */
+/*        HOME         */
+/* ------------------- */
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.intro, .cta, .newsletter, .quote {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border: 1px solid var(--accent1-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.intro h2, .cta h2, .newsletter h2, .quote h2 { 
+    color: var(--secondary-color);
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    color: var(--secondary-color);
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: var(--text-font);
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--accent2-color);
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    border: 1px solid var(--accent1-color);
+    border-radius: 5px;
+    font-family: var(--heading-font);
+    font-size: 1em;
+}
+
+.newsletter button {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--text-font);
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: var(--accent2-color);
+}
+
+.quote blockquote {
+    font-style: italic;
+    color: var(--secondary-color);
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.quote cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: var(--secondary-color);
+    font-style: normal;
+}
+
+/* ------------------- */
+/*        TRIPS        */
+/* ------------------- */
+.trips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.trip {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border: 1px solid var(--accent1-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.trip img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.trip h2 {
+    color: var(--secondary-color);
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.trip p {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.trip-button {
+    display: inline-block;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: var(--text-font);
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.trip-button:hover {
+    background-color: var(--accent2-color);
+}
+
